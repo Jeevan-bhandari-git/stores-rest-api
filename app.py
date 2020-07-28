@@ -14,10 +14,6 @@ app.config['PROPAGATE_EXCEPTIONS'] = True
 app.secret_key = 'james'		# referred this into security.py / user.py
 api = Api(app)
 
-@app.before_first_request
-def create_tables():
-	db.create_all()
-
 jwt = JWT(app, authenticate, identity)	# initialized JWT objects.
 
 api.add_resource(Store, '/store/<string:name>')
