@@ -1,0 +1,2 @@
+BLACKLIST = ser()
+#BLACKLIST = {2, 3}
