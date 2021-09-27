@@ -1,0 +1,97 @@
+python --version
+python -m pip --version
+python -m venv myenv
+.\myenv\Scripts\activate
+pip install tensorflow==2.4.1
+.
+.
+pip install numpy==1.19.5
+
+
+
+
+
+#Creating a virtual environment
+c:\>c:\Python35\python -m venv c:\path\to\myenv
+python -m venv myenv
+
+#Activating a virtual environment
+.\myenv\Scripts\activate
+#for macOS and Linux:
+source myenv/bin/activate
+
+#Leaving the virtual environment
+deactivate
+
+
+
+#For g1pa speech or text project
+--------------------------------------------
+pip install SpeechRecognition
+#text-to-speech conversion library
+pip install pyttsx3
+
+#Bindings for PortAudio
+pip install PyAudio 
+
+If any issue::---------
+Check version and Bit for Windows :
+c:/> python
+Python 3.8.0...[MSC v.1916 32 bit(Intel)] on win32
+>>>
+So download : PyAudio-0.2.11-cp38-cp38-win32.whl
+from: https://www.lfd.uci.edu/~gohlke/pythonlibs/#pyaudio
+pip install PyAudio-0.2.11-cp38-cp38-win32.whl
+**confirm by:
+pip show pyaudio
+
+Solution found at : https://stackoverflow.com/questions/52283840/i-cant-install-pyaudio-on-windows-how-to-solve-error-microsoft-visual-c-14
+::--------
+**Optional not worked for me
+#i)pip install pipwin
+#pipwin install pyaudio
+#ii) conda install PyAudio
+*--
+#Sending whatsapp message at certain time.
+pip install pywhatkit
+#python wikipedia result on for any info/wiki/wikipedia/search etc.
+pip install wikipedia
+#python pyjokes
+pip install pyjokes
+
+*** display all installed packeges list:
+python -m pip freeze
+pip freeze >requirements.txt
+
+***Later Install these packeges throught requirements.txt
+python -m pip install -r requirements.txt
+
+
+
+
+
+##https://packaging.python.org/guides/installing-using-pip-and-virtual-environments/
+*** pip commands ---------
+# Display python and pip version
+python -m pip --version
+=> pip 19.2.3 from ..... \pip (python 3.8)
+
+#You can make sure that pip is up-to-date by running:
+python -m pip install --upgrade pip
+
+python -m pip install requests>=2.0.0,<3.0.0
+python -m pip install requests==2.18.4
+
+
+NOTE:
+#Installing from local archives
+python -m pip install requests-2.18.4.tar.gz
+
+#If you have a directory containing archives of multiple packages, you can tell pip to look for packages there and not to use the Python Package Index (PyPI) at all:
+python -m pip install --no-index --find-links=/local/dir/ requests
+
+#If you want to allow packages from both the Python Package Index (PyPI) and a separate index, you can use the --extra-index-url flag instead:
+python -m pip install --extra-index-url http://index.example.com/simple/ SomeProject
+
+#Upgrading packages
+python -m pip install --upgrade requests

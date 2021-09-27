@@ -1,0 +1,89 @@
+{"intents": [
+        {"tag": "greeting",
+         "patterns": ["Hi there", "How are you", "Is anyone there?","Hey","Hola", "Hello", "Good day"],
+         "responses": ["Hello, thanks for asking Margun", "Good to see you again", "Hi there, how can Margun help?"],
+         "context": [""],
+"urls": [""],
+"imgs": [""]
+        },
+        {"tag": "goodbye",
+         "patterns": ["Bye", "See you later", "Goodbye", "Nice chatting to you, bye", "Till next time"],
+         "responses": ["See you!", "Have a nice day", "Bye! Come back again soon."],
+         "context": [""],
+"urls": [""],
+"imgs": [""]
+        },
+        {"tag": "thanks",
+         "patterns": ["Thanks", "Thank you", "That's helpful", "Awesome, thanks", "Thanks for helping me"],
+         "responses": ["Happy to help!", "Any time!", "My pleasure"],
+         "context": [""],
+"urls": [""],
+"imgs": [""]
+        },
+        {"tag": "noanswer",
+         "patterns": [],
+         "responses": ["Sorry, can't understand you", "Please give me more info", "Not sure I understand"],
+         "context": [""],
+"urls": [""],
+"imgs": [""]
+        },
+        {"tag": "Q265",
+         "patterns": ["short item report","report of short item","short item","short li","AVERAGE SHORT"],
+         "responses": ["Go to Daily Report >Purcahse Report >Select any report you can find a option which is Report for; There are two options here (ALL/ SHORT)> Select Short Generate report."],
+         "context": [""],
+"urls": [""],
+"imgs": [""]
+        },
+      {"tag": "Q118",
+         "patterns": ["Show Message 'msvcp71.dill file missing","bill not genertae into pdf","Convert bill into pdf","visual fox","bill not generate in excel","BILL INTO PDF FILE","PDF FILE","msv","MSVC","WHEN BILL CONVERT INTO PDF","PDF NOT GENERATE","dll file error"],
+         "responses": ["This error appears due to MSVCP71.DLL and MSVCR71.DLL files are missing in system.In order to resolve this issue user needs to follow the below steps:- Firstly, Copy both files from the Marg folder and simply paste it into System 32 folder."],
+         "context": [""],
+"urls": ["MSVCP71.DLL"],
+"imgs": [""]
+        },
+      {"tag": "Q250",
+         "patterns": ["modify and delete option not show","bill not modify","modification and deletion not allow","deletion and modification option not show","delete option not show,modify option ot show","modify button not display","delete button not display","MODIFY BUTTON NOT DISPLAY IN SALE BILL","modify option not show","NOT ABLE TO MODIFY AND DELETE HIS SALE AND PURCHASE BILL"],
+         "responses": ["This problem appears when the software renewal is pending. So, please check software renewal date; renew the software with the help of the service provider or make online payment through Marg website."],
+         "context": [""],
+"urls": [""],
+"imgs": [""]
+        },
+        {"tag": "Q306",
+         "patterns": ["ledger balance mismatch in current year","opening balance mismatch in current year","mismatch amount","OPENING SYOCK","OPENING","CLOSING BALANC","If last year closing balances"],
+         "responses": ["If the user using the Multi Unit, then the user has to check the conversion of items current year the same as the previous year."],
+         "context": [""],
+"urls": ["www.shiponclick.com"],
+"imgs": ["logistic-icon4.PNG"]
+        },
+        {"tag": "Q150",
+         "patterns": ["Remove keyboard","marg keyboard disable","enable keyboard","disable keyboard","how to enable keyboard","virtua","virtual","enable virtual keyboard","open virtual keyboard","open"],
+         "responses": ["Alternative solution: Note- If customer is using the old version of marg then go to Help; click on virtual keyboard"],
+         "context": [""],
+"urls": [""],
+"imgs": [""]
+        },
+        {"tag": "Q194 ?",
+         "patterns": ["change rate in purchase bill","change rate in current bill","change purchase rate at","purchase rate change","change purchase rate","ITEM WISE PROFIT"],
+         "responses": ["In case of multi unit user have to check cost of the item(define in per pcs or per case)"],
+         "context": [""],
+"urls": [""],
+"imgs": [""]
+        },
+        {"tag": "noans",
+         "patterns": ["why","how","when","I","you"],
+         "responses": ["Can't Understand Your Question","please elaborate your question"],
+         "context": [""],
+"urls": [""],
+"imgs": [""]
+        },  
+
+
+      {"tag": "search_module_by_type",
+         "patterns": [],
+         "responses": ["Loading modules details"],
+         "context": [""],
+"urls": [""],
+"imgs": [""]
+        }
+   ]
+}
